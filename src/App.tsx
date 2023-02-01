@@ -1,8 +1,9 @@
+import TodoCard from "./components/TodoCard"
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      <h1>Welcome</h1>
-    </div>
+    <main className="bg-gradient-to-br from-sky-600 to-indigo-400 flex justify-center items-center min-h-screen">
+      <TodoCard />
+    </main>
   )
 }
 
