@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+
 export type todosType = {
     id: string,
     title: string,
@@ -16,6 +17,16 @@ const todoSlice = createSlice({
     reducers: {
         addTodo(state, action) {
             state.items = [...state.items, action.payload.todo]
+        },
+        completeTodo(state, action) {
+            const updatedTodos = state.items.map(todo => {
+                if (action.payload.id === todo.id) {
+                    return { ...todo, completed: !todo.completed }
+                } else {
+                    return todo;
+                }
+            });
+            state.items = [...updatedTodos];
         }
     }
 });
