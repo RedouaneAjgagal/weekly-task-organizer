@@ -1,13 +1,22 @@
 import React from 'react'
+import { FaCheck } from 'react-icons/fa'
+import { todosType } from '../store/todo'
 
-const TodoItem = () => {
+interface Props {
+    data: todosType
+}
+
+const TodoItem: React.FC<Props> = (props) => {
+    const { title, details, date, completed } = props.data
+    const style = `absolute right-0 bottom-0 rounded-tl-full w-8 h-8 ${completed ? 'bg-sky-400' : 'bg-sky-400/30'} `;
     return (
-        <li className='border-l-4 border-l-indigo-500 shadow-lg px-6 py-2 flex justify-between items-center leading-8'>
-            <div>
-                <h2 className='text-2xl font-medium tracking-wide'>Meeting</h2>
-                <p className='text-gray-600 font-medium '>Room 408, east 2 layer</p>
+        <li className='border-l-4 border-l-indigo-500 shadow-lg px-6 py-3 flex justify-between items-center leading-8 relative'>
+            <div className='flex flex-col gap-2'>
+                <h2 className='text-2xl font-medium tracking-wide'>{title}</h2>
+                <p className='text-gray-600 font-medium leading-normal'>{details}</p>
             </div>
-            <p className='text-gray-600 text-xl'>10:30</p>
+            <p className='text-gray-600 text-xl'>{date}</p>
+            <button className={style}><FaCheck className='text-sm text-white absolute bottom-1 right-2' /></button>
         </li>
     )
 }
