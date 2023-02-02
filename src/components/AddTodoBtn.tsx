@@ -1,9 +1,10 @@
 import React from 'react'
+import PrimaryBtn from './UI/PrimaryBtn'
 
 const AddTodoBtn = () => {
     return (
         <div className='flex justify-center'>
-            <button className='shadow-lg shadow-indigo-300 text-indigo-500 font-bold w-14 h-14 flex items-center justify-center rounded-full text-3xl'>+</button>
+            <PrimaryBtn colors='shadow-indigo-300 text-indigo-500'>+</PrimaryBtn>
         </div>
     )
 }
