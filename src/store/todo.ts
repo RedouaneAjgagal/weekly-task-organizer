@@ -5,7 +5,8 @@ export type todosType = {
     title: string,
     details: string,
     date: string,
-    completed: boolean
+    completed: boolean,
+    color: string
 }
 const todos: todosType[] = localStorage.todos ? JSON.parse(localStorage.todos) : [];
 const initialState: { items: todosType[] } = {
