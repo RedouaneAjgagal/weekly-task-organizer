@@ -19,7 +19,7 @@ const todoSlice = createSlice({
             state.items = [...state.items, action.payload.todo]
         },
         completeTodo(state, action) {
-            const updatedTodos = state.items.map(todo => {
+            const updatedTodos: todosType[] = state.items.map(todo => {
                 if (action.payload.id === todo.id) {
                     return { ...todo, completed: !todo.completed }
                 } else {
