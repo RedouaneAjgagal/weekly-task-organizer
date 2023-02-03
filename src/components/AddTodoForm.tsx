@@ -19,7 +19,7 @@ const AddTodoForm = () => {
             details: details.current!.value,
             date: date.current!.value
         }
-        const todosValue = Object.values(enteredValues).filter(item => item.length === 0)
+        const todosValue = Object.values(enteredValues).filter(item => item.length === 0 || item.trim() === '')
         if (todosValue.length > 0) return;
         const todo = {
             id: crypto.randomUUID(),
@@ -29,8 +29,6 @@ const AddTodoForm = () => {
         dispatch(todoAction.addTodo({ todo }));
         dispatch(todoUiAction.closeForm());
     }
-    
-
     
     return (
         <form className='p-4 py-8 flex flex-col gap-6 bg-gray-900 rounded-t-3xl absolute inset-x-8 bottom-0 z-20' onSubmit={addTodoHanlder}>
