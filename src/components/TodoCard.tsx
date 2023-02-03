@@ -1,9 +1,8 @@
-import React from 'react'
 import TodoDay from './TodoTime'
 import TodoList from './TodoList'
 import AddTodoBtn from './AddTodoBtn'
-import AddTodoForm from './AddTodoForm'
 import { useAppSelector } from './hooks/hooks'
+import FormContainer from './FormContainer'
 
 const TodoCard = () => {
     const { addTodoIsOpen } = useAppSelector(state => state.todoUiReducer);
@@ -14,7 +13,7 @@ const TodoCard = () => {
                 <TodoList />
             </div>
             <AddTodoBtn />
-            {addTodoIsOpen ? <AddTodoForm /> : null}
+            {addTodoIsOpen ? <FormContainer /> : null}
         </section>
     )
 }

@@ -31,12 +31,12 @@ const AddTodoForm = () => {
     }
     
     return (
-        <form className='p-4 py-8 flex flex-col gap-6 bg-gray-900 rounded-t-3xl absolute inset-x-8 bottom-0 z-20' onSubmit={addTodoHanlder}>
-            <input type="text" name="title" id="title" placeholder="What's Next?" className='placeholder-green-300/25 border-b border-b-green-300 outline-none pb-1 text-lg bg-transparent text-slate-300' ref={title} />
-            <input type="text" name="description" id="description" placeholder="Details.." className='border-b border-b-green-300 outline-none placeholder-green-300/25 pb-1 text-lg bg-transparent text-slate-300' ref={details} />
-            <input type="datetime-local" name="date" id="date" className='border-b border-b-green-300  outline-none pb-1 text-lg bg-transparent text-green-300/25' ref={date} defaultValue={currentFullTime} min={currentFullTime} max={maxTime} />
+        <form className='p-4 py-8 flex flex-col gap-6 bg-gray-100 rounded-t-3xl absolute inset-x-4 bottom-0 z-20 shadow-[0_-50px_35px_-60px_rgb(0,0,0,1)]' onSubmit={addTodoHanlder}>
+            <input type="text" name="title" id="title" placeholder="What's Next?" className='placeholder-slate-500 border-b border-b-slate-300 outline-none pb-1 text-lg bg-transparent text-slate-900' ref={title} />
+            <input type="text" name="description" id="description" placeholder="Details.." className='border-b border-b-slate-300 outline-none placeholder-slate-500 pb-1 text-lg bg-transparent text-slate-900' ref={details} />
+            <input type="datetime-local" name="date" id="date" className='border-b border-b-slate-300  outline-none pb-1 text-lg bg-transparent text-slate-500' ref={date} defaultValue={currentFullTime} min={currentFullTime} max={maxTime} />
             <div className='flex justify-center'>
-                <PrimaryBtn colors='shadow-blacks-900 text-gray-900 bg-green-300'><FaCheck className='text-2xl' /></PrimaryBtn>
+                <PrimaryBtn colors='shadow-green-300 text-gray-900 bg-gray-100'><FaCheck className='text-2xl text-green-400' /></PrimaryBtn>
             </div>
         </form>
     )
