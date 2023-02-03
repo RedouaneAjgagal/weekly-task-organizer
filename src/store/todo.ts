@@ -7,8 +7,9 @@ export type todosType = {
     date: string,
     completed: boolean
 }
+const todos: todosType[] = localStorage.todos ? JSON.parse(localStorage.todos) : [];
 const initialState: { items: todosType[] } = {
-    items: []
+    items: todos
 }
 
 const todoSlice = createSlice({
@@ -17,6 +18,7 @@ const todoSlice = createSlice({
     reducers: {
         addTodo(state, action) {
             state.items = [...state.items, action.payload.todo]
+            localStorage.setItem('todos', JSON.stringify(state.items))
         },
         completeTodo(state, action) {
             const updatedTodos: todosType[] = state.items.map(todo => {
@@ -27,6 +29,7 @@ const todoSlice = createSlice({
                 }
             });
             state.items = [...updatedTodos];
+            localStorage.setItem('todos', JSON.stringify(state.items))
         }
     }
 });

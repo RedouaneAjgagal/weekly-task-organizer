@@ -13,7 +13,8 @@ const TodoCard = () => {
                 <TodoDay />
                 <TodoList />
             </div>
-            {addTodoIsOpen ? <AddTodoForm /> : <AddTodoBtn />}
+            <AddTodoBtn />
+            {addTodoIsOpen ? <AddTodoForm /> : null}
         </section>
     )
 }
