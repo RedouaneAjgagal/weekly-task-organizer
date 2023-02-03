@@ -12,7 +12,7 @@ const AddTodoForm = () => {
 
     const dispatch = useAppDispatch();
 
-    const colors: string[] = ['indigo', 'red', 'green', 'fuchsia'];
+    const colors: string[] = ['#ff1515', '#7c00d7', '#00b700', '#ff00ff'];
 
     const addTodoHanlder = (e: React.FormEvent) => {
         e.preventDefault()
@@ -23,6 +23,7 @@ const AddTodoForm = () => {
         }
         const todosValue = Object.values(enteredValues).filter(item => item.length === 0 || item.trim() === '')
         if (todosValue.length > 0) return;
+        // generate color
         const generate = Math.floor(Math.random() * colors.length);
         const generatedColor: string = colors[generate];
         const todo = {
