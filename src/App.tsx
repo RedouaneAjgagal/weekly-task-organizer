@@ -1,15 +1,17 @@
 import TodoCard from "./components/TodoCard"
 import NavbarContainer from "./components/NavbarContainer"
+import Home from "./components/Home"
 
 function App() {
+  const bg = 'from-sky-600 to-indigo-400'
   return (
-    <div className="bg-gradient-to-tl from-sky-600 to-indigo-400">
+    <div className="flex flex-col  min-h-screen bg-hero bg-cover">
       <nav className="flex justify-center md:px-4">
         <NavbarContainer />
       </nav>
-      <main className="flex justify-center min-h-screen py-4 md:p-4">
-        <TodoCard />
-      </main>
+
+      {/* <TodoCard /> */}
+      <Home />
     </div>
   )
 }

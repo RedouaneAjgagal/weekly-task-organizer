@@ -22,6 +22,9 @@ module.exports = {
       },
       animation: {
         scaleIn: 'scaleIn 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'
+      },
+      backgroundImage: {
+        'hero': "linear-gradient(to right bottom, rgb(121 83 131 / 90%), rgb(41 105 185 / 90%)), url('./src/assets/home-page.jpg')"
       }
     },
   },
