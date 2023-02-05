@@ -4,7 +4,7 @@ import Home from "../components/Home"
 import { useAppSelector } from './hooks/hooks'
 
 const MainContent = () => {
-    const { home, tasks } = useAppSelector(state => state.pageReducer);
+    const { home, tasks } = useAppSelector(state => state.pageReducer)
 
     return (
         <>
