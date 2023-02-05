@@ -64,11 +64,12 @@ App usage:
 - Redux
 - Vite
 - Mobile-first workflow
+- localStorage
 
 ### Important notes
 
 - Navlinks: These two links (home and planning) used as a button element instead of anchor element because i didnt use any paths in this app
-- The Logo: This logo wasn't made by me and fount it on [flaticon](https://www.flaticon.com/free-icon/logo_187879?term=logo&page=2&position=95&origin=search&related_id=187879)
+- The Logo: This logo wasn't made by me and found it on [flaticon](https://www.flaticon.com/free-icon/logo_187879?term=logo&page=2&position=95&origin=search&related_id=187879)
 - Layout of Todo card: I didnt design the layout from scratch and used an exist one, [Todo Card Design](https://i.pinimg.com/originals/bc/a5/54/bca55433cd1d75268d3378107cb1226c.jpg) i took the stars off because i had no use for them in this app.
 
 ## Author
