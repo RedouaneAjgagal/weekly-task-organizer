@@ -20,9 +20,11 @@ const NavbarContainer = () => {
 
     const openHomeHandler = () => {
         dispatch(pageAction.openHome());
+        setIsOpen(prev => !prev)
     }
     const openTaskHandler = () => {
         dispatch(pageAction.openTasks());
+        setIsOpen(prev => !prev);
     }
     return (
         <>
