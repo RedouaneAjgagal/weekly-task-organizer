@@ -7,8 +7,8 @@ import FormContainer from './FormContainer'
 const TodoCard = () => {
     const { addTodoIsOpen } = useAppSelector(state => state.todoUiReducer);
     return (
-        <main className="flex justify-center min-h-screen py-4 md:p-4">
-            <section className="pb-8 bg-white max-w-xl w-full flex flex-col justify-between shadow-lg rounded-lg relative h-full min-h-[40rem] md:max-w-5xl">
+        <main className="flex justify-center py-4 md:p-4">
+            <section className="pb-8 bg-white max-w-xl w-full flex flex-col justify-between shadow-2xl shadow-indigo-900/20 rounded-lg relative h-full min-h-[40rem] md:max-w-5xl">
                 <div className='flex flex-col gap-8'>
                     <TodoDay />
                     <TodoList />
