@@ -46,7 +46,7 @@ App usage:
 
 #### Small screen
 
-![week organize home page](https://user-images.githubusercontent.com/98456832/216839440-226fd9a4-80f8-4a70-9afb-1305c64d4de8.png)
+![week organize home page](https://user-images.githubusercontent.com/98456832/216844769-3f8835e2-f298-41e0-af05-a32f5462bc20.png)
 ![week organize planning page](https://user-images.githubusercontent.com/98456832/216839498-1a6c9113-786e-4e8e-9aba-71628ae39f08.png)
 
 ### Links
@@ -70,3 +70,7 @@ App usage:
 - Navlinks: These two links (home and planning) used as a button element instead of anchor element because i didnt use any paths in this app
 - The Logo: This logo wasn't made by me and fount it on [flaticon](https://www.flaticon.com/free-icon/logo_187879?term=logo&page=2&position=95&origin=search&related_id=187879)
 - Layout of Todo card: I didnt design the layout from scratch and used an exist one, [Todo Card Design](https://i.pinimg.com/originals/bc/a5/54/bca55433cd1d75268d3378107cb1226c.jpg) i took the stars off because i had no use for them in this app.
+
+## Author
+
+- GitHub - [@RedouaneAjgagal](https://github.com/RedouaneAjgagal)

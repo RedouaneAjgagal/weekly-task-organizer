@@ -24,7 +24,7 @@ module.exports = {
         scaleIn: 'scaleIn 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'
       },
       backgroundImage: {
-        'hero': "linear-gradient(to right bottom, rgb(121 83 131 / 90%), rgb(41 105 185 / 90%)), url('./src/assets/home-page.jpg')"
+        'hero': "linear-gradient(to right bottom, rgb(121 83 131 / 90%), rgb(41 105 185 / 90%)), url('https://images.unsplash.com/photo-1606327054469-cf9dd7162d6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')"
       }
     },
   },
